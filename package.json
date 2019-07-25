@@ -47,7 +47,12 @@
     "webpackbar": "^3.2.0"
   },
   "dependencies": {
+    "animate.css": "^3.7.2",
+    "apixu": "github:apixu/apixu-nodejs#master",
     "core-js": "^3.1.4",
-    "handlebars": "^4.1.2"
+    "handlebars": "^4.1.2",
+    "material-design-icons": "^3.0.1",
+    "nonblockjs": "^1.0.8",
+    "pnotify": "^4.0.0"
   }
 }
