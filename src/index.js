@@ -9,10 +9,10 @@ import PNotify from '../node_modules/pnotify/dist/es/PNotify';
 const getWeatherFunc = getGeoPosition().then(data => {
   spinner.show();
   const getCityFormRef = document.getElementById('search-form');
-  const cityInput = getCityFormRef.querySelector('input[type="text"]');
+
   function handleSubmit(event) {
     event.preventDefault();
-    const valueOfCity = cityInput.value;
+    const valueOfCity = document.getElementsByTagName('input')[0].value;
     if (valueOfCity === '') {
       PNotify.notice({
         text: 'Пожалуйста введите название города!',
@@ -47,5 +47,5 @@ const getWeatherFunc = getGeoPosition().then(data => {
       spinner.hide();
       return;
     }, 5000);
-  }, 10);
+  }, 20);
 });
